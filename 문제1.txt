@@ -1,0 +1,32 @@
+package task;
+
+import java.util.Scanner;
+
+public class Taks01 {
+		public static void main(String[] args) {
+//			문제 1. 사용자가 입력한 숫자까지 구구단을 출력하는 프로그램
+//			   구구단은 1단부터 9단까지다.
+//			   사용자가 4를 입력할 경우 1단부터 4단까지 아래와 같은 형식으로 출력한다. 단은 \t로 구분한다.
+//			   (이중 for 문 사용, if 사용 X)
+
+			//1) 입력값 n
+			//2) 이중 for문 사용
+			//3) 첫번째 for문 1부터 n까지 열반복
+			//4) 두번째 for문 1부터 9까지 곱 반복
+			
+			Scanner sc = new Scanner(System.in);
+		
+			//출력값 입력받기
+			System.out.println("구구단을 입력하세요 : ");
+			int n = sc.nextInt();
+			
+			//구구단 출력
+			for (int i = 1; i < 10; i++) {//행
+				for (int j = 1; j <= n; j++) {// 1부터 입력한 수까지 열 
+					System.out.print(j + " * " + i + " = " + (j * i) + " ");	
+					}	
+				System.out.println(); // 줄바꿈
+				}
+			sc.nextLine();
+			}
+}
